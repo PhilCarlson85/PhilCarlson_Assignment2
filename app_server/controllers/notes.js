@@ -16,3 +16,8 @@ module.exports.signIn = function(req, res) {
 module.exports.addNote = function(req, res) {
     res.render('note-editor-form', {title: 'Note Editor'});
 };
+
+/* GET 'Note Editor' page */
+module.exports.notesPage = function(req, res) {
+    res.render('notes-page', {title: 'Notes...'});
+};
